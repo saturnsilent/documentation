@@ -1,0 +1,76 @@
+---
+title: "Gestion des Radios"
+icon: "radio"
+description: "Gérez les fréquences radio et les autorisations d'accès par société. 69 fréquences sont disponibles par défaut."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Chaque fréquence radio est associée à un nom, un canal et une liste de sociétés autorisées. L'accès est restreint par société — seuls les membres des groupes sélectionnés peuvent utiliser la fréquence en jeu.
+</Info>
+
+---
+
+## Ajouter une fréquence
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la liste, cliquez sur l'action de création pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777592793_Design_sans_titre__54_.jpg"
+      alt="Ajout d'une fréquence radio"
+      style={{ width: "66%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777592868_Design_sans_titre__55_.jpg"
+      alt="Paramètres d'une fréquence radio"
+      style={{ width: "66%" }}
+    />
+
+    | Champ | Description | Exemple |
+    | --- | --- | --- |
+    | **Nom** | Identifiant lisible de la fréquence | `BurgerRadio`, `PoliceCom` |
+    | **Fréquence** | Canal numérique attribué | `10.69`, `5.00` |
+    | **Sociétés autorisées** | Groupes pouvant accéder à cette fréquence | `LSPD`, `Burger Shot` |
+
+    <Warning>
+      Évitez les conflits de fréquence entre groupes — deux sociétés sur le même canal peuvent intercepter leurs communications mutuellement.
+    </Warning>
+  </Step>
+</Steps>
+
+---
+
+## Modifier une fréquence
+
+<Steps>
+  <Step title="Sélectionner la fréquence">
+    Cliquez sur une fréquence existante dans la liste pour accéder à sa fiche de paramétrage.
+  </Step>
+  <Step title="Ajuster ou supprimer">
+    Modifiez le nom, le canal ou les sociétés autorisées, ou supprimez la fréquence si elle n'est plus utilisée.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777592970_Design_sans_titre__56_.jpg"
+      alt="Modification d'une fréquence radio"
+      style={{ width: "64%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Tip>
+  Testez l'accès à chaque fréquence sensible avec un compte joueur membre de la société concernée avant mise en production.
+</Tip>
+
+- Utilisez des noms **explicites et cohérents** avec la société ou le service associé.
+- Réservez les canaux sensibles aux **bonnes sociétés** — vérifiez deux fois la liste des autorisations.

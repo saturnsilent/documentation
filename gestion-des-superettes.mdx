@@ -1,0 +1,89 @@
+---
+title: "Gestion des Supérettes"
+icon: "basket-shopping"
+description: "Ajoutez et administrez les points de vente de proximité du serveur."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Les supérettes sont des points de vente fixes, chacun défini par une position de vendeur, un blip sur la carte et un état d'activation. Elles peuvent être activées ou désactivées à tout moment sans suppression.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777588325_Design_sans_titre__16_.jpg"
+  alt="Liste des supérettes"
+  style={{ width: "49%" }}
+/>
+
+---
+
+## Créer une supérette
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la liste, cliquez sur l'action de création pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777588383_Design_sans_titre__17_.jpg"
+      alt="Ajout d'une supérette"
+      style={{ width: "48%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777588494_Design_sans_titre__18_.jpg"
+      alt="Paramètres d'une supérette"
+      style={{ width: "57%" }}
+    />
+
+    | Champ | Description |
+    | --- | --- |
+    | **Position du blip** | Emplacement de l'icône sur la carte du jeu |
+    | **Position du vendeur** | Coordonnées du PED dans le monde |
+    | **État** | Active ou désactive la supérette sans la supprimer |
+
+    <Warning>
+      Le blip et le vendeur doivent être alignés avec votre mapping — un décalage peut désorienter les joueurs.
+    </Warning>
+  </Step>
+</Steps>
+
+---
+
+## Gérer les supérettes existantes
+
+<Steps>
+  <Step title="Sélectionner la supérette">
+    Cliquez sur une supérette dans la liste pour accéder à sa fiche de paramétrage.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777588568_Design_sans_titre__19_.jpg"
+      alt="Gestion d'une supérette existante"
+      style={{ width: "54%" }}
+    />
+  </Step>
+  <Step title="Modifier ou désactiver">
+    Depuis la fiche, vous pouvez :
+
+    - modifier son **placement** ou ses **coordonnées** ;
+    - l'**activer ou la désactiver** selon les besoins du serveur ;
+    - la **supprimer** si elle n'est plus utilisée.
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Tip>
+  Désactivez une supérette avant de la supprimer si vous souhaitez tester son impact sur le serveur — vous pourrez la réactiver sans reconfiguration.
+</Tip>
+
+- Placez le vendeur dans une zone **facilement accessible** et dégagée.
+- Vérifiez l'alignement entre le **blip et la position réelle** directement en jeu.
+- Maintenez un **maillage cohérent** sur la carte pour couvrir les zones fréquentées.

@@ -1,0 +1,119 @@
+---
+title: "Gestion du Crafting"
+icon: "crosshairs-simple"
+description: "Créez vos recettes et reliez-les aux tables de craft utilisées en jeu."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Le système de crafting repose sur deux éléments distincts : la **librairie de recettes** qui centralise les formules de fabrication, et les **tables de craft** qui déterminent où et par qui ces recettes peuvent être utilisées.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777589465_Design_sans_titre__30_.jpg"
+  alt="Vue générale du crafting"
+  style={{ width: "62%" }}
+/>
+
+---
+
+## Librairie de recettes
+
+La librairie centralise l'ensemble des recettes du serveur. Chaque recette est configurable indépendamment et peut être associée à plusieurs tables.
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la librairie, cliquez sur l'action de création pour ajouter une nouvelle recette.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777589601_Design_sans_titre__33_.jpg"
+      alt="Création d'une recette"
+      style={{ width: "59%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777589740_Design_sans_titre__31_.jpg"
+      alt="Paramètres d'une recette"
+      style={{ width: "63%" }}
+    />
+
+    | Champ | Description |
+    | --- | --- |
+    | **Nom** | Identifiant de la recette dans la librairie |
+    | **Description** | Texte visible par le joueur lors du craft |
+    | **Temps de fabrication** | Durée du processus de craft en secondes |
+    | **Ingrédients** | Items requis, sélectionnés depuis la liste des objets |
+    | **Résultat** | Item produit et quantité obtenue |
+  </Step>
+  <Step title="Vérifier la recette">
+    Contrôlez les dépendances et la cohérence avant de valider.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777589983_Design_sans_titre__32_.jpg"
+      alt="Gestion d'une recette"
+      style={{ width: "69%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Tables de craft
+
+Les tables définissent les points de fabrication en jeu. **18 tables** sont disponibles par défaut.
+
+<Steps>
+  <Step title="Accéder à la liste des tables">
+    Depuis l'interface, consultez les tables existantes ou créez-en une nouvelle.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777590353_Design_sans_titre__35_.jpg"
+      alt="Liste des tables de craft"
+      style={{ width: "58%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    | Champ | Description |
+    | --- | --- |
+    | **Nom & localisation** | Identifiant et position de la table en jeu |
+    | **Société autorisée** | Restreint l'accès aux membres de la société sélectionnée |
+    | **Recettes associées** | Liste des recettes disponibles à cette table |
+    | **Liaison à une propriété** | Rattache la table à une propriété spécifique si nécessaire |
+  </Step>
+  <Step title="Associer les recettes">
+    Sélectionnez uniquement les recettes utiles à ce point de craft.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777590204_Design_sans_titre__34_.jpg"
+      alt="Paramètres d'une table de craft"
+      style={{ width: "69%" }}
+    />
+
+    <Info>
+      Une table avec trop de recettes nuit à la lisibilité pour le joueur. Pour supprimer une recette ou une table, cliquez dessus puis sur **Supprimer**.
+    </Info>
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Warning>
+  Vérifiez les **dépendances d'items** avant de publier une recette — un ingrédient manquant ou mal configuré la rend inutilisable en jeu.
+</Warning>
+
+<Tip>
+  Séparez les recettes par **usage ou métier** pour garder une librairie lisible et maintenable sur le long terme.
+</Tip>
+
+- Maintenez des **temps de fabrication cohérents** entre recettes de même niveau de complexité.
+- Limitez l'accès aux tables produisant des items sensibles via la **restriction par société**.

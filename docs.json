@@ -1,0 +1,114 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Documentation Addveo",
+  "colors": {
+    "primary": "#ff7e10",
+    "light": "#ffffff",
+    "dark": "#000000"
+  },
+  "favicon": "https://addcdn.rf.gd/uploads/panneladdveo/1777674025_Design_sans_titre__19_.png",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Acceuil",
+        "pages": [
+          "bienvenue-sur-la-documentation-addveo"
+        ]
+      },
+      {
+        "group": "Gestion Serveur",
+        "pages": [
+          "gestion-des-roles",
+          "gestion-des-sanctions",
+          "gestion-des-garages",
+          "gestion-des-portes",
+          "gestion-des-safezones",
+          "gestion-des-points-de-teleportation",
+          "gestion-des-vehicules",
+          "gestion-de-la-boutique",
+          "gestion-des-superettes",
+          "gestion-des-coffres",
+          "gestion-des-items",
+          "gestion-des-billboards",
+          "gestion-du-crafting",
+          "gestion-des-metiers",
+          "gestion-des-farms",
+          "gestion-des-organisations",
+          "gestion-de-la-vente-de-drogue",
+          "gestion-des-radios"
+        ]
+      },
+      {
+        "group": "Panel Addveo",
+        "pages": [
+          "introduction",
+          "dashboard",
+          "journal-d-activites",
+          "personnalisation",
+          "fichier",
+          "console",
+          "webhooks",
+          "patch-notes",
+          "suggestions",
+          "parametres-du-compte"
+        ]
+      },
+      {
+        "group": "Légal",
+        "pages": [
+          "mentions-legales"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/images/light.svg",
+    "dark": "/images/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://discord.gg/addveo"
+      },
+      {
+        "href": "https://bale.addveo.com/",
+        "label": "Panel Addveo"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "footer": {
+    "socials": {
+      "website": "https://addveo.com/",
+      "discord": "https://discord.gg/addveo"
+    }
+  },
+  "background": {
+    "color": {
+      "light": "#ffffff",
+      "dark": "#0e0e10"
+    }
+  },
+  "appearance": {
+    "default": "light",
+    "strict": false
+  }
+}

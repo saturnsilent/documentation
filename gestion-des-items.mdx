@@ -1,0 +1,93 @@
+---
+title: "Gestion des Items"
+icon: "sitemap"
+description: "Gérez l'ensemble des objets du serveur depuis une interface centralisée."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Tous les objets du serveur sont gérés depuis une interface unique, classés par catégorie avec une barre de recherche par correspondance partielle. Saisir `eau` peut remonter `bouteille d'eau` ou `couteau`.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777589034_Design_sans_titre__26_.jpg"
+  alt="Liste des items"
+  style={{ width: "51%" }}
+/>
+
+---
+
+## Créer ou modifier un item
+
+<Steps>
+  <Step title="Accéder au formulaire">
+    Cliquez sur **Créer un item** pour en ajouter un nouveau, ou sur un item existant pour le modifier.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777588988_Design_sans_titre__25_.jpg"
+      alt="Liste des items"
+      style={{ width: "55%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations de l'item.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777589131_Design_sans_titre__27_.jpg"
+      alt="Configuration d'un item"
+      style={{ width: "52%" }}
+    />
+
+    <Warning>
+      L'**ID** doit être unique à l'échelle du serveur. Un doublon peut provoquer des conflits dans les scripts et les configurations.
+    </Warning>
+  </Step>
+</Steps>
+
+---
+
+## Référence des champs
+
+### Identification
+
+| Champ | Description | Exemples |
+| --- | --- | --- |
+| **ID** | Identifiant technique utilisé dans les scripts et commandes. Unique, sans espaces — utilisez `_` si nécessaire. | `water_bottle`, `lockpick` |
+| **ID de l'icône** | Nom du fichier image affiché dans l'inventaire, sans extension. Doit correspondre au fichier stocké dans `images` ou `icons`. | `water`, `phone` |
+| **Nom** | Nom visible par le joueur dans l'inventaire. Peut contenir des espaces, purement visuel. | `Bouteille d'eau`, `Téléphone` |
+
+### Comportement
+
+| Champ | Description | Exemples |
+| --- | --- | --- |
+| **Poids** | Valeur utilisée pour calculer la capacité occupée dans l'inventaire. | `0.5`, `1`, `2` |
+| **Unique** | `true` = un objet par slot (téléphone, arme). `false` = empilable (matériaux, consommables). | `true`, `false` |
+| **Limite** | Nombre maximal que le joueur peut posséder. `Aucune` pour aucune restriction. | `1`, `5`, `Aucune` |
+| **Jetable** | `true` = l'objet peut être abandonné. `false` = l'objet est conservé dans l'inventaire. | `true`, `false` |
+
+### Affichage & classification
+
+| Champ | Description | Exemples |
+| --- | --- | --- |
+| **Modèle 3D** | Modèle utilisé pour l'affichage en main ou au sol. Peut rester vide si non nécessaire. | `prop_ld_flow_bottle` |
+| **Catégorie** | Classe l'objet dans l'inventaire pour une navigation claire. | `Nourriture`, `Outils`, `Armes` |
+| **Preset** | Applique un comportement prédéfini selon votre framework. | `food`, `drink`, `weapon` |
+
+<Info>
+  Les **presets** permettent d'hériter automatiquement d'un comportement standard — privilégiez-les pour accélérer la configuration des objets courants.
+</Info>
+
+---
+
+## Recommandations
+
+<Tip>
+  Définissez une convention de nommage pour les IDs dès le départ (`categorie_nom`) et tenez-vous y — un catalogue cohérent est bien plus facile à maintenir.
+</Tip>
+
+- Gardez des **catégories simples et durables** — évitez la fragmentation.
+- Évitez d'ajouter des objets **inutiles ou redondants** au catalogue.
+- Exploitez les **presets** pour les objets aux comportements standards.

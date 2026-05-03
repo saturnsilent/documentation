@@ -1,0 +1,128 @@
+---
+title: "Gestion des Points de Téléportation"
+icon: "arrow-up-right-and-arrow-down-left-from-center"
+description: "Administrez les déplacements rapides du serveur — téléportations, ascenseurs et zones d'arrêt — depuis une interface centralisée."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Les points de téléportation couvrent trois types de déplacements rapides : les **téléportations** entre deux positions, les **ascenseurs** reliant plusieurs étages, et les **zones d'arrêt** qui encadrent ou limitent certains déplacements.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777585561_Design_sans_titre__39_.jpg"
+  alt="Gestion des téléportations"
+  style={{ width: "63%" }}
+/>
+
+---
+
+## Créer un point de téléportation
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la liste, cliquez sur l'action de création pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777585701_Design_sans_titre__40_.jpg"
+      alt="Ajout d'un point de téléportation"
+      style={{ width: "62%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777585799_Design_sans_titre__41_.jpg"
+      alt="Paramètres d'un point de téléportation"
+      style={{ width: "62%" }}
+    />
+
+    | Champ | Description |
+    | --- | --- |
+    | **Nom** | Identifiant du point dans la liste |
+    | **Position d'entrée** | Coordonnées où le joueur interagit pour se téléporter |
+    | **Position de sortie** | Coordonnées d'arrivée après téléportation |
+    | **Sens unique** | Empêche le retour en sens inverse |
+    | **Véhicules autorisés** | Permet ou non la téléportation avec un véhicule |
+  </Step>
+</Steps>
+
+---
+
+## Créer un ascenseur
+
+<Steps>
+  <Step title="Nommer l'ascenseur">
+    Renseignez le **nom** de l'ascenseur pour l'identifier dans la liste.
+  </Step>
+  <Step title="Ajouter les étages">
+    Placez votre personnage à l'emplacement exact de chaque étage, puis cliquez sur **Ajouter un étage**.
+
+    <Info>
+      La position est capturée au moment du clic — déplacez-vous précisément avant de valider chaque étage.
+    </Info>
+  </Step>
+</Steps>
+
+---
+
+## Gérer les points existants
+
+<Steps>
+  <Step title="Accéder au point le plus proche">
+    Le bouton **Gérer le point le plus proche** ouvre directement la fiche du point adjacent, sans passer par la liste.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777586364_Design_sans_titre__43_.jpg"
+      alt="Gestion du point le plus proche"
+      style={{ width: "63%" }}
+    />
+  </Step>
+  <Step title="Modifier ou supprimer">
+    Depuis cette fiche, vous pouvez **modifier**, **supprimer** ou **vérifier le paramétrage** du point directement sur le terrain.
+  </Step>
+</Steps>
+
+---
+
+## Zones d'arrêt
+
+<Steps>
+  <Step title="Créer une zone d'arrêt">
+    Renseignez un **nom**, une **position** et un **rayon** pour délimiter le périmètre.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777585993_Design_sans_titre__45_.jpg"
+      alt="Gestion des zones d'arrêt"
+      style={{ width: "63%" }}
+    />
+  </Step>
+  <Step title="Gérer les zones existantes">
+    Via **Gérer les zones d'arrêt**, modifiez ou supprimez les zones déjà configurées.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777586165_Design_sans_titre__42_.jpg"
+      alt="Liste des zones d'arrêt"
+      style={{ width: "69%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Warning>
+  Évitez les positions de sortie dans des zones fermées, encombrées ou superposées à d'autres interactions.
+</Warning>
+
+<Tip>
+  Testez systématiquement chaque trajet **avec et sans véhicule** avant la mise en production.
+</Tip>
+
+- Vérifiez toujours les coordonnées **directement en jeu** après configuration.
+- Réservez le **sens unique** aux usages réellement nécessaires — le retour intuitif améliore l'expérience joueur.

@@ -1,0 +1,97 @@
+---
+title: "Gestion des Métiers"
+icon: "blanket"
+description: "Créez et structurez les métiers du serveur depuis une interface unique. 114 jobs sont disponibles par défaut."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Chaque métier est configuré depuis une fiche unique regroupant ses points d'accès, ses blips et son schéma d'activité. Le **schéma** choisi détermine les paramètres avancés disponibles selon le type de gameplay visé.
+</Info>
+
+---
+
+![Liste des métiers](https://addcdn.rf.gd/uploads/1777590578_Design_sans_titre__36_.jpg)
+
+---
+
+## Créer un job
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Cliquez sur **Créer un job** pour ouvrir le formulaire de configuration.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777590707_Design_sans_titre__37_.jpg"
+      alt="Paramètres principaux d'un métier"
+      style={{ width: "68%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    | Champ | Description |
+    | --- | --- |
+    | **Nom du job** | Identifiant visible dans la liste et en jeu |
+    | **Blip** | Icône sur la carte — peut être désactivé si non pertinent |
+    | **Blip détaillé** | Variante enrichie avec image et description |
+    | **Position du vestiaire** | Coordonnées du point de changement de tenue |
+    | **Position du coffre** | Coordonnées du stockage dédié au métier |
+    | **Blanchiment d'argent** | Active cette option pour les métiers qui le nécessitent |
+  </Step>
+  <Step title="Choisir le schéma">
+    Sélectionnez le schéma adapté au type d'activité du métier.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777590881_Design_sans_titre__38_.jpg"
+      alt="Choix du schéma d'un métier"
+      style={{ width: "63%" }}
+    />
+
+    <CardGroup cols={2}>
+      <Card title="Restaurant" icon="utensils">
+        Déverrouille : mapping, zone des plateaux, frigo, zone de notation et magasin offline.
+      </Card>
+
+      <Card title="Laboratoire" icon="flask">
+        Déverrouille : séquenceur ADN et paramètres liés à la production de substances.
+      </Card>
+    </CardGroup>
+
+    <Info>
+      Les champs disponibles dans le formulaire varient dynamiquement selon le schéma sélectionné.
+    </Info>
+  </Step>
+</Steps>
+
+---
+
+## Modifier un job
+
+<Steps>
+  <Step title="Sélectionner le job">
+    Cliquez sur un job existant dans la liste pour accéder à sa fiche complète.
+  </Step>
+  <Step title="Ajuster les paramètres">
+    Modifiez l'ensemble des champs disponibles selon vos besoins.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777590984_Design_sans_titre__39_.jpg"
+      alt="Modification d'un métier"
+      style={{ width: "66%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Tip>
+  Testez le **parcours complet du métier en jeu** avant ouverture — vestiaire, coffre, blip et schéma doivent tous être validés ensemble.
+</Tip>
+
+- Nommez les métiers de façon **claire et stable** — un renommage tardif peut impacter les scripts dépendants.
+- Placez **blips, vestiaires et coffres** avec précision pour garantir une bonne expérience joueur.
+- Choisissez le schéma **avant de configurer les paramètres avancés** — il conditionne les champs disponibles.

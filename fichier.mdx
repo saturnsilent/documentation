@@ -1,0 +1,115 @@
+---
+title: "Fichiers"
+icon: "folder-open"
+description: "Accédez à l'ensemble de l'arborescence du serveur et gérez vos fichiers depuis le panel."
+---
+
+## Vue d'ensemble
+
+La section Fichiers donne un accès direct à l'arborescence complète du serveur. Navigation, édition, upload et suppression sont disponibles depuis une interface centralisée — sans avoir à passer par un client FTP externe.
+
+![Arborescence des fichiers](https://addcdn.rf.gd/uploads/panneladdveo/1777582435_Capture_d___cran_2026-03-20_203903.png)
+
+---
+
+## Fonctionnalités
+
+<CardGroup cols={2}>
+  <Card title="Navigation" icon="folder-tree">
+    Parcourez l'arborescence du serveur dossier par dossier pour localiser rapidement vos ressources.
+  </Card>
+
+  <Card title="Upload de fichiers" icon="upload">
+    Déposez des fichiers directement depuis le panel sans outil tiers.
+  </Card>
+
+  <Card title="Éditeur intégré" icon="pen-to-square">
+    Modifiez vos fichiers de configuration directement dans le navigateur, sans téléchargement préalable.
+  </Card>
+
+  <Card title="Suppression" icon="trash">
+    Retirez les fichiers ou dossiers devenus inutiles en quelques clics.
+  </Card>
+</CardGroup>
+
+![Éditeur de fichier](https://addcdn.rf.gd/uploads/panneladdveo/1777582435_Capture_d___cran_2026-03-20_203916.png)
+
+---
+
+## Configuration des Modules
+
+Les fichiers de configuration permettent de contrôler entièrement le fonctionnement d'un module sans toucher à la logique principale du script.
+
+<CardGroup cols={2}>
+  <Card title="Valeurs simples" icon="sliders">
+    Durée, activation, chances — des paramètres directs à modifier sans structure complexe.
+  </Card>
+
+  <Card title="Listes d'éléments" icon="list">
+    Positions, objets, points d'interaction — des ensembles structurés lus automatiquement par le script.
+  </Card>
+</CardGroup>
+
+![Gestion avancée](https://addcdn.rf.gd/uploads/panneladdveo/1777629523_Capture_d___cran_2026-03-20_204451.png)
+
+---
+
+## Accès au fichier
+
+Le fichier de configuration est accessible depuis le chemin suivant :
+
+`seed/modules/\[rp\]/\[life\]/\[gta5\]/`
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777657570_111111111111111111111111111111apture_d_____cran_2026-05-01_194555.png"
+  alt="Gestion avancée"
+  style={{ width:"84%" }}
+/>
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777657698_222222222222222222222222222222222222222apture_d_____cran_2026-05-01_194804.png"
+  alt="Gestion avancée"
+  style={{ width:"84%" }}
+/>
+
+---
+
+## Modifier un paramètre
+
+Vous pouvez ajuster :
+
+- les **valeurs globales** — durée, activation, etc.
+- les **positions** — `vector3`, `vector4`
+- les **objets ou éléments** dans les listes
+
+Pour ajouter un nouvel élément, copiez une structure existante, modifiez uniquement les valeurs nécessaires et conservez les mêmes clés.
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777657914_333333333333333333333333333333333333333Capture_d_____cran_2026-05-01_195142.png"
+  alt="Gestion avancée"
+  style={{ width:"84%" }}
+/>
+
+---
+
+## Commandes utiles
+
+| Commande | Description |
+| --- | --- |
+| `/copyc` | Copie la position actuelle en `vector3` |
+| `/copych` | Copie la position actuelle en `vector4` (avec orientation) |
+
+---
+
+## Bonnes pratiques
+
+Ne modifiez jamais les **noms des clés** — le script les lit de manière exacte. Une coquille suffit à casser le module.
+
+<Tip>
+  Réutilisez toujours une structure existante comme base et testez en jeu après **chaque modification individuelle**.
+</Tip>
+
+- Respectez le format des données (`vector3`, `vector4`, nombres…).
+- Vérifiez les virgules et accolades `{}` après chaque modification.
+- Évitez de supprimer des éléments sans vérifier leur utilité au préalable.
+- Évitez les modifications massives sans validation progressive.

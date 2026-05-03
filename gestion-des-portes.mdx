@@ -1,0 +1,105 @@
+---
+title: "Gestion des Portes"
+icon: "door-closed"
+description: "Pilotez les accès du serveur en regroupant et en configurant les portes par zone ou par société."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Les portes sont organisées en **groupes** — chaque groupe rassemble plusieurs portes sous une même logique d'autorisation, liée à une zone ou une société. Cette structure permet de gérer finement les accès sans configurer chaque porte individuellement.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777583191_Design_sans_titre__28_.jpg"
+  alt="Gestion des portes"
+  style={{ width: "58%" }}
+/>
+
+---
+
+## Ajouter un groupe de portes
+
+<Steps>
+  <Step title="Créer le groupe">
+    Créez d'abord un groupe qui servira de conteneur pour toutes les portes d'une même zone.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777583259_Design_sans_titre__29_.jpg"
+      alt="Création d'un groupe de portes"
+      style={{ width: "61%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    | Champ | Description |
+    | --- | --- |
+    | **Nom** | Identifiant clair du groupe (ex. : `Commissariat - Accès restreint`) |
+    | **Coordonnées** | Position du groupe dans le monde |
+    | **Société associée** | Restreint l'accès aux membres de la société sélectionnée |
+  </Step>
+  <Step title="Vérifier le paramétrage">
+    Contrôlez la configuration avant de valider le groupe.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777584096_Design_sans_titre__32_.jpg"
+      alt="Paramètres d'un groupe de portes"
+      style={{ width: "57%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Ajouter des portes au groupe
+
+Une fois le groupe créé, ouvrez l'onglet **Portes** pour y ajouter les portes individuelles.
+
+<CardGroup cols={3}>
+  <Card title="Type" icon="door-open">
+    Définissez le type de porte : `Porte`, `Trappe`, ou autre selon la géométrie en jeu.
+  </Card>
+
+  <Card title="État par défaut" icon="toggle-on">
+    Choisissez si la porte est ouverte ou verrouillée au démarrage du serveur.
+  </Card>
+
+  <Card title="Digicode" icon="keyboard">
+    Activez un digicode et positionnez-le si l'accès doit nécessiter un code.
+  </Card>
+</CardGroup>
+
+---
+
+## Action rapide
+
+<Steps>
+  <Step title="Ouvrir la porte la plus proche">
+    Le bouton **Ouvrir la porte la plus proche** ouvre instantanément la porte détectée à proximité de votre position — utile pour tester rapidement une configuration sans passer par le menu.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777584670_Design_sans_titre__35_.jpg"
+      alt="Ouverture de la porte la plus proche"
+      style={{ width: "55%" }}
+    />
+
+    <Tip>
+      Utilisez cette action pour valider vos configurations directement sur le terrain, sans repasser par le panel.
+    </Tip>
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Warning>
+  Associez toujours une société aux groupes donnant accès à des zones sensibles ou réservées au staff.
+</Warning>
+
+- Regroupez les portes par **bâtiment ou usage** pour garder une arborescence lisible.
+- Nommez les groupes de façon **explicite et cohérente** (ex. : `Zone - Accès`).
+- Testez les **digicodes** et les **états par défaut** en jeu avant la mise en production.

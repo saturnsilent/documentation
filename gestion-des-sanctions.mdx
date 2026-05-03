@@ -1,0 +1,119 @@
+---
+title: "Gestion des Sanctions"
+icon: "scale-unbalanced"
+description: "Créez une grille de sanctions cohérente pour cadrer la modération de votre serveur. 21 sanctions sont disponibles par défaut."
+---
+
+## Vue d'ensemble
+
+<Info>
+  La gestion des sanctions vous permet de définir une politique de modération structurée et reproductible. Chaque sanction est configurable avec des **stages progressifs** pour gérer les récidives de manière équitable.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777581342_Design_sans_titre__20_.jpg"
+  alt="Liste des sanctions"
+  style={{ width: "52%" }}
+/>
+
+---
+
+## Ajouter une sanction
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la liste, cliquez sur le bouton d'ajout pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777581460_Design_sans_titre__22_.jpg"
+      alt="Accès au formulaire d'ajout"
+      style={{ width: "61%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    - **Nom** — choisissez un intitulé clair et reconnaissable.
+    - **Expiration** — définissez une durée (`15h`, `7j`) ou choisissez `permanent`.
+    - **Stages progressifs** — configurez la montée en gravité en cas de récidive.
+
+    <Info>
+      **Exemple de progression par stages :** `Ban 2h` → `Ban 2 jours` → `Ban définitif`
+    </Info>
+  </Step>
+</Steps>
+
+---
+
+## Comprendre les stages
+
+Un stage correspond à un **niveau de récidive**. À chaque nouvelle infraction du même type, le système applique automatiquement le stage suivant — et donc une sanction plus lourde.
+
+<CardGroup cols={3}>
+  <Card title="Stage 1" icon="1">
+    Premier écart — sanction légère. Laisse une chance au joueur de se corriger.
+  </Card>
+
+  <Card title="Stage 2" icon="2">
+    Récidive — sanction intermédiaire. Signal clair d'un comportement persistant.
+  </Card>
+
+  <Card title="Stage 3" icon="3">
+    Récidive grave — sanction maximale. Ban définitif ou exclusion prolongée.
+  </Card>
+</CardGroup>
+
+Ce système garantit une modération **standardisée**, **traçable** et **progressive**, sans laisser place à l'arbitraire.
+
+---
+
+## Modifier une sanction
+
+<Steps>
+  <Step title="Sélectionner la sanction">
+    Cliquez sur une sanction existante dans la liste pour accéder à son paramétrage.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777583384_Design_sans_titre__13_.png"
+      alt="Modification d'une sanction"
+      style={{ width: "62%" }}
+    />
+  </Step>
+  <Step title="Ajuster les paramètres">
+    Modifiez les champs disponibles :
+
+    - le **nom** de la sanction ;
+    - sa **durée** d'expiration ;
+    - ses **stages** progressifs.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777583745_Design_sans_titre__30_.jpg"
+      alt="Édition des paramètres d'une sanction"
+      style={{ width: "67%" }}
+    />
+  </Step>
+  <Step title="Affiner la progression">
+    Vérifiez la cohérence des stages entre eux avant de valider.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777583865_Design_sans_titre__31_.jpg"
+      alt="Gestion détaillée d'une sanction"
+      style={{ width: "74%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Tip>
+  Validez votre échelle de gravité avec toute l'équipe de modération avant la mise en production.
+</Tip>
+
+- Utilisez des noms de sanctions **explicites et sans ambiguïté**.
+- **Harmonisez les durées** entre modérateurs pour éviter les incohérences.
+- Limitez les doublons entre sanctions aux paramètres trop proches.
+- Relisez l'ensemble de votre grille régulièrement pour qu'elle reste adaptée.

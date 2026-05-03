@@ -1,0 +1,102 @@
+---
+title: "Gestion des Coffres"
+icon: "message-code"
+description: "Créez des espaces de stockage adaptés aux besoins des métiers, propriétés ou organisations."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Chaque coffre est configuré avec sa propre capacité, distance d'interaction et règle d'accès. Ils peuvent être libres ou restreints à un groupe ou une clé dédiée, selon l'usage ciblé.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777588623_Design_sans_titre__20_.jpg"
+  alt="Liste des coffres"
+  style={{ width: "49%" }}
+/>
+
+---
+
+## Créer un coffre
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la liste, cliquez sur l'action de création pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777588728_Design_sans_titre__21_.jpg"
+      alt="Accès aux actions d'un coffre"
+      style={{ width: "58%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777588821_Design_sans_titre__22_.jpg"
+      alt="Formulaire de création d'un coffre"
+      style={{ width: "51%" }}
+    />
+
+    | Champ | Description |
+    | --- | --- |
+    | **Nom** | Identifiant du coffre dans la liste |
+    | **Position** | Coordonnées dans le monde |
+    | **Poids maximal** | Capacité de stockage — à calibrer selon l'usage réel |
+    | **Distance d'interaction** | Rayon dans lequel le joueur peut ouvrir le coffre |
+    | **Mode d'accès** | `Libre` pour les espaces publics, `Restreint` pour les zones sensibles |
+
+    <Info>
+      En mode **restreint**, liez le coffre à un groupe existant ou créez une clé d'accès dédiée.
+    </Info>
+  </Step>
+</Steps>
+
+---
+
+## Comprendre les paramètres clés
+
+<CardGroup cols={3}>
+  <Card title="Poids maximal" icon="weight-hanging">
+    Définit la capacité de stockage. Limitez-la sur les coffres critiques pour éviter les abus.
+  </Card>
+
+  <Card title="Distance d'interaction" icon="arrows-left-right">
+    Trop grande, elle crée des ouvertures involontaires. Trop faible, elle nuit à l'ergonomie.
+  </Card>
+
+  <Card title="Mode d'accès" icon="lock">
+    Libre pour les zones publiques. Restreint pour les métiers, propriétés et organisations.
+  </Card>
+</CardGroup>
+
+---
+
+## Gérer les coffres existants
+
+<Steps>
+  <Step title="Sélectionner le coffre">
+    Depuis la liste, cliquez sur un coffre pour accéder à sa fiche de paramétrage.
+  </Step>
+  <Step title="Modifier ou supprimer">
+    Ajustez les paramètres souhaités ou supprimez le coffre s'il n'est plus utilisé.
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Warning>
+  Réservez le mode restreint aux zones réellement sensibles — un coffre libre dans une zone critique est un vecteur d'abus.
+</Warning>
+
+<Tip>
+  Testez l'interaction directement en jeu après chaque création pour valider la distance et le mode d'accès.
+</Tip>
+
+- Utilisez des noms **explicites et cohérents** pour faciliter la maintenance.
+- Limitez la capacité des coffres à fort enjeu.

@@ -1,0 +1,81 @@
+---
+title: "Gestion des Véhicules"
+icon: "car"
+description: "Ajoutez, classez et tarifez les véhicules disponibles sur votre serveur. Les modèles add-on sont également pris en charge."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Les véhicules sont organisés par **catégories** qui structurent le catalogue et simplifient la navigation. Chaque véhicule est défini par son nom de spawn, sa catégorie et son prix d'usine — qui sert de référence économique pour l'ensemble de vos points de vente.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777586578_Design_sans_titre__44_.jpg"
+  alt="Liste des catégories de véhicules"
+  style={{ width: "49%" }}
+/>
+
+---
+
+## Ajouter un véhicule
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis une catégorie, cliquez sur l'action de création pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777586646_Design_sans_titre__46_.jpg"
+      alt="Création d'un véhicule"
+      style={{ width: "53%" }}
+    />
+  </Step>
+  <Step title="Choisir la catégorie">
+    Sélectionnez la catégorie dans laquelle classer le véhicule.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777586720_Design_sans_titre__47_.jpg"
+      alt="Choix de la catégorie du véhicule"
+      style={{ width: "63%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777586795_Design_sans_titre__48_.jpg"
+      alt="Paramètres d'un véhicule"
+      style={{ width: "54%" }}
+    />
+
+    | Champ | Description | Exemple |
+    | --- | --- | --- |
+    | **Nom de spawn** | Identifiant technique du modèle — doit correspondre exactement au nom utilisé par le jeu | `sultan`, `adder` |
+    | **Catégorie** | Classe le véhicule dans le catalogue pour une navigation claire | `Sportif`, `Utilitaire` |
+    | **Prix d'usine** | Valeur de base du véhicule, utilisée comme référence économique | `85000` |
+
+    <Warning>
+      Le **nom de spawn** doit correspondre exactement au modèle en jeu — une coquille empêche le véhicule de spawner correctement.
+    </Warning>
+  </Step>
+</Steps>
+
+---
+
+## Gérer par catégorie
+
+Ouvrez une catégorie pour afficher les véhicules qu'elle contient, **ajuster leurs prix** ou **supprimer** un modèle devenu inutile.
+
+---
+
+## Recommandations
+
+<Tip>
+  Testez chaque modèle **directement en jeu** après ajout — notamment les add-on, dont le nom de spawn peut différer du nom affiché dans les outils de modding.
+</Tip>
+
+- Vérifiez le nom de spawn **avant toute publication**.
+- Évitez les doublons entre véhicules **natifs et add-on**.
+- Maintenez une **logique tarifaire cohérente** entre catégories pour préserver l'équilibre économique.

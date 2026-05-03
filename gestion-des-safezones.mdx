@@ -1,0 +1,87 @@
+---
+title: "Gestion des Safezones"
+icon: "chart-simple-horizontal"
+description: "Définissez les zones protégées du serveur pour encadrer les interactions sensibles."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Les safezones délimitent des zones où les interactions sensibles sont restreintes ou protégées. Chaque zone est définie par une **position**, un **rayon** et un **état** — et peut être ajustée ou désactivée à tout moment sans suppression.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777584339_Design_sans_titre__34_.jpg"
+  alt="Liste des safezones"
+  style={{ width: "55%" }}
+/>
+
+---
+
+## Créer une safezone
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la liste, cliquez sur l'action de création pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777585066_Design_sans_titre__36_.jpg"
+      alt="Ajout d'une safezone"
+      style={{ width: "59%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    ![Paramètres d'une safezone](https://addcdn.rf.gd/uploads/1777585206_Design_sans_titre__37_.jpg)
+
+    | Champ | Description |
+    | --- | --- |
+    | **Position** | Coordonnées du centre de la zone dans le monde |
+    | **Rayon** | Surface couverte par la protection, en mètres |
+    | **État** | Active ou désactive la safezone sans la supprimer |
+  </Step>
+  <Step title="Vérifier la configuration">
+    Contrôlez le paramétrage avant de valider la zone.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777585312_Design_sans_titre__38_.jpg"
+      alt="Gestion d'une safezone"
+      style={{ width: "64%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Comprendre le rayon
+
+Le rayon détermine la surface réellement protégée. Il doit être calibré avec soin :
+
+<CardGroup cols={2}>
+  <Card title="Rayon trop faible" icon="circle-minus">
+    La zone couvre trop peu — des joueurs peuvent interagir juste en dehors de la protection prévue.
+  </Card>
+
+  <Card title="Rayon trop large" icon="circle-plus">
+    La zone empiète sur des zones de gameplay non souhaitées et peut bloquer des interactions légitimes.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Utilisez le bouton **Accéder à la safezone la plus proche** pour vous téléporter directement sur la zone et vérifier visuellement son rayon en jeu.
+</Tip>
+
+---
+
+## Recommandations
+
+<Warning>
+  Préférez **désactiver** une safezone plutôt que la supprimer si son utilité est incertaine — vous pourrez la réactiver sans reconfiguration.
+</Warning>
+
+- Placez les safezones uniquement sur des zones **réellement sensibles** du gameplay.
+- Vérifiez le rayon **directement en jeu** après chaque configuration.
+- Gardez des noms et des placements **cohérents avec votre map** pour faciliter la maintenance.

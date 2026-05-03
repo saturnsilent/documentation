@@ -1,0 +1,104 @@
+---
+title: "Gestion des Farms"
+icon: "farm"
+description: "Créez les zones de récolte, de traitement ou de vente de votre serveur."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Les farms structurent la **boucle économique** du serveur en trois types de zones complémentaires : récolte, transformation et revente. Chaque zone est configurée indépendamment avec ses récompenses, conditions d'accès et limites journalières.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777591257_Design_sans_titre__40_.jpg"
+  alt="Liste des farms"
+  style={{ width: "84%" }}
+/>
+
+---
+
+## Comprendre les types
+
+<CardGroup cols={3}>
+  <Card title="farm" icon="wheat-awn">
+    Zone de **récolte** ou d'acquisition de ressources brutes. Schéma associé : `NormalFarm`.
+  </Card>
+
+  <Card title="process" icon="gears">
+    Zone de **transformation** d'une ressource en produit intermédiaire ou final. Schéma associé : `NormalProcess`.
+  </Card>
+
+  <Card title="sell" icon="coins">
+    Zone de **revente** contre de l'argent ou une récompense définie. Pas de schéma requis.
+  </Card>
+</CardGroup>
+
+---
+
+## Créer un farm
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la liste, cliquez sur l'action de création pour ouvrir le formulaire.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777591368_Design_sans_titre__41_.jpg"
+      alt="Création d'un farm"
+      style={{ width: "67%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    | Champ | Description |
+    | --- | --- |
+    | **ID & Type** | Identifiant unique et type de zone : `sell`, `farm` ou `process` |
+    | **Nom & Texte d'aide** | Libellé et instruction visible par le joueur sur la zone |
+    | **Position & Marqueur** | Coordonnées et affichage d'un marqueur visuel en jeu |
+    | **Société liée** | Restreint l'accès aux membres de la société sélectionnée |
+    | **Accès public forcé** | Ouvre la zone à tous les joueurs indépendamment de la société |
+    | **Items requis** | Objets nécessaires pour interagir avec la zone |
+    | **Items & monnaie gagnés** | Récompenses obtenues après interaction |
+    | **PNJ & Blip** | Présence d'un personnage et icône sur la carte |
+    | **Limite journalière** | Plafond de récompenses par joueur et par jour |
+    | **Schéma** | Comportement associé au type de zone |
+
+    <Warning>
+      L'**ID** doit être unique à l'échelle du serveur — un doublon peut provoquer des conflits dans la boucle de gameplay.
+    </Warning>
+  </Step>
+</Steps>
+
+---
+
+## Modifier un farm
+
+<Steps>
+  <Step title="Sélectionner le farm">
+    Cliquez sur un farm existant dans la liste pour accéder à sa fiche complète.
+  </Step>
+  <Step title="Ajuster les paramètres">
+    Modifiez les champs souhaités ou rééquilibrez les récompenses et prérequis.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777591476_Design_sans_titre__42_.jpg"
+      alt="Modification d'un farm"
+      style={{ width: "66%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Tip>
+  Utilisez les **limites journalières** pour contrôler l'afflux de ressources dans l'économie — c'est le levier le plus efficace contre le farming excessif.
+</Tip>
+
+- Gardez des IDs **uniques et lisibles** dès la création.
+- Équilibrez soigneusement **gains et prérequis** pour chaque zone.
+- Vérifiez les positions **directement en jeu** avant mise en ligne.

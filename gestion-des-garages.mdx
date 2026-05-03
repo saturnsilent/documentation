@@ -1,0 +1,115 @@
+---
+title: "Gestion des Garages"
+icon: "garage-car"
+description: "Configurez les points de sortie et de rangement des véhicules de votre serveur depuis une interface centralisée."
+---
+
+## Vue d'ensemble
+
+<Info>
+  Chaque garage est géré depuis une fiche unique regroupant ses points d'accès, de sortie et d'aperçu. La configuration est entièrement spatiale — la précision des coordonnées est essentielle pour éviter les collisions et les interactions qui se chevauchent.
+</Info>
+
+---
+
+<img
+  src="https://addcdn.rf.gd/uploads/1777582686_Design_sans_titre__23_.jpg"
+  alt="Liste des garages"
+  style={{ width: "57%" }}
+/>
+
+---
+
+## Ajouter un garage
+
+<Steps>
+  <Step title="Ouvrir le formulaire">
+    Cliquez sur **Ajouter un garage** pour ouvrir le formulaire de configuration complet.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777582753_Design_sans_titre__24_.jpg"
+      alt="Ajout d'un garage"
+      style={{ width: "66%" }}
+    />
+  </Step>
+  <Step title="Renseigner les champs">
+    Complétez les informations suivantes :
+
+    | Champ | Description |
+    | --- | --- |
+    | **Modèle & position du PED** | Apparence et emplacement du personnage d'interaction |
+    | **Type de garage** | `Véhicule`, `Avion`, ou autre catégorie |
+    | **Mode hélicoptère uniquement** | À activer si le garage est réservé aux hélicos |
+    | **Option Cayo** | À cocher si le garage est dédié à la zone Cayo |
+    | **Coordonnées de sortie** | Endroit où le véhicule apparaît en jeu |
+    | **Coordonnées d'entrée & rayon** | Zone d'interaction pour ouvrir le garage |
+    | **Coordonnées d'aperçu** | Position d'affichage du véhicule dans l'interface |
+  </Step>
+  <Step title="Vérifier le formulaire">
+    Contrôlez l'ensemble des coordonnées avant de valider.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777582976_Design_sans_titre__25_.jpg"
+      alt="Formulaire d'un garage"
+      style={{ width: "51%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Comprendre les points clés
+
+<CardGroup cols={3}>
+  <Card title="Point d'entrée" icon="door-open">
+    Zone où le joueur interagit pour ouvrir le garage. Le rayon doit être confortable sans empiéter sur d'autres interactions à proximité.
+  </Card>
+
+  <Card title="Point de sortie" icon="car-side">
+    Endroit où le véhicule apparaît. Prévoyez assez d'espace pour le modèle le plus volumineux du garage.
+  </Card>
+
+  <Card title="Point d'aperçu" icon="eye">
+    Position d'affichage du véhicule dans l'interface. Placez-le dans une zone dégagée et visuellement propre.
+  </Card>
+</CardGroup>
+
+<Warning>
+  Les points de sortie et d'aperçu doivent être placés avec précision pour éviter les collisions et les artefacts visuels.
+</Warning>
+
+---
+
+## Modifier un garage
+
+<Steps>
+  <Step title="Sélectionner le garage">
+    Cliquez sur un garage existant dans la liste pour retrouver la même fiche de paramétrage.
+  </Step>
+  <Step title="Ajuster les paramètres">
+    Modifiez les éléments souhaités :
+
+    - les **positions** et coordonnées ;
+    - le **type** de garage ;
+    - les **options spécifiques** (Cayo, hélicoptère…) ;
+    - les **points de sortie ou d'aperçu**.
+
+    <img
+      src="https://addcdn.rf.gd/uploads/1777583072_Design_sans_titre__26_.jpg"
+      alt="Modification d'un garage"
+      style={{ width: "59%" }}
+    />
+  </Step>
+</Steps>
+
+---
+
+## Recommandations
+
+<Tip>
+  Testez chaque sortie avec plusieurs types de véhicules, notamment le modèle le plus volumineux prévu pour ce garage.
+</Tip>
+
+- Évitez les points d'entrée trop proches d'autres zones d'interaction.
+- Séparez clairement les garages **terrestres**, **aériens** et **spéciaux**.
+- Vérifiez les accès liés aux zones spécifiques (Cayo, zones restreintes) avant la mise en ligne.
