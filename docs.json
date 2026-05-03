@@ -73,24 +73,22 @@
         "href": "https://discord.gg/addveo"
       },
       {
-        "href": "https://bale.addveo.com/",
-        "label": "Panel Addveo"
+        "label": "Panel Addveo",
+        "href": "https://bale.addveo.com/"
       }
-    ],
-  
-    }
+    ]
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
