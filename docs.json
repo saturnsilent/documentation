@@ -17,6 +17,13 @@
         ]
       },
       {
+        "group": "Documentation",
+        "pages": [
+          "commandes",
+          "de"
+        ]
+      },
+      {
         "group": "Gestion Serveur",
         "pages": [
           "gestion-des-roles",

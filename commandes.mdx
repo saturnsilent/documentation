@@ -1,0 +1,102 @@
+---
+title: "Commandes Staff"
+icon: "terminal"
+description: "Référence complète des commandes disponibles pour les membres du staff en jeu."
+---
+
+## Vue d'ensemble
+
+Cette documentation regroupe l'ensemble des commandes staff disponibles en jeu, organisées par catégorie. Elles sont réservées aux membres disposant des droits d'accès nécessaires et couvrent la gestion des véhicules, des joueurs, des sanctions et des outils d'intervention.
+
+---
+
+## Véhicules
+
+Les commandes liées aux véhicules permettent aux membres du staff d'intervenir rapidement sur les entités présentes en jeu.
+
+| Commande | Description |
+| --- | --- |
+| `/veh [model-name]` | Fait apparaître un véhicule à partir de son nom de modèle — utile pour les tests, l'assistance ou l'intervention |
+| `/dve [radius]` | Supprime les véhicules présents dans un rayon défini autour du joueur |
+| `/doe [radius]` | Supprime les objets présents dans un rayon spécifié |
+| `/dpe [radius]` | Supprime les PNJ dans une zone donnée pour réinitialiser l'environnement |
+
+---
+
+## Soins et interaction avec les joueurs
+
+Ces commandes sont destinées à assister les joueurs ou corriger certaines situations en jeu.
+
+| Commande | Description |
+| --- | --- |
+| `/revive [id]` | Réanime un joueur ciblé à l'aide de son identifiant |
+| `/revivezone [radius]` | Réanime tous les joueurs présents dans un rayon défini autour du staff |
+| `/heal [id]` | Soigne entièrement un joueur ciblé |
+| `/demenotter [id]` | Retire les menottes d'un joueur |
+| `/unjail [id]` | Libère un joueur de prison |
+
+---
+
+## Informations sur les joueurs
+
+Les outils d'information facilitent le suivi et la gestion des joueurs.
+
+| Commande | Description |
+| --- | --- |
+| `/id` | Affiche l'identifiant du joueur concerné |
+| `/id2` | Affiche des informations complémentaires — sociétés et organisations du joueur |
+| `/list_tickets` | Affiche la liste des reports actuellement pris en charge |
+
+---
+
+## Sanctions et gestion administrative
+
+Cette catégorie regroupe les commandes de modération et de gestion des sanctions.
+
+| Commande | Description |
+| --- | --- |
+| `/sanction [id]` | Applique une sanction à un joueur |
+| `/sc [id]` | Raccourci pour appliquer une sanction |
+| `/kick [id] [raison]` | Expulse un joueur du serveur avec une raison précisée |
+| `/ban [id] [heure] [raison]` | Bannit un joueur temporairement ou définitivement selon la durée indiquée |
+| `/unban [idban]` | Retire un bannissement existant |
+| `/wipe [id/license]` | Supprime complètement les données d'un joueur |
+
+<Warning>
+  Les commandes `/wipe` et `/ban` sont irréversibles ou à fort impact — utilisez-les avec précaution et conformément à la politique de modération.
+</Warning>
+
+---
+
+## Communication staff
+
+Les commandes de communication assurent une coordination efficace entre les membres du staff et avec les joueurs.
+
+| Commande | Description |
+| --- | --- |
+| `/mstaff [message]` | Envoie un message au canal réservé au staff |
+| `/announce [message]` | Diffuse un message global à l'ensemble du serveur |
+| `/admintag` | Active ou désactive le tag administrateur visible en jeu |
+
+---
+
+## Outils staff
+
+Ces commandes offrent des fonctionnalités spécifiques pour les interventions et la modération.
+
+| Commande | Description |
+| --- | --- |
+| `/vanish` | Rend le membre du staff invisible aux autres joueurs |
+| `/noclip` | Active le déplacement libre — permet de voler et traverser les objets |
+| `/staff` | Active le mode staff avec les outils associés |
+
+---
+
+## Utilitaires
+
+Les commandes utilitaires apportent des fonctions complémentaires pour des cas d'usage spécifiques.
+
+| Commande | Description |
+| --- | --- |
+| `/bagweight [poids]` | Définit la capacité de poids d'un sac |
+| `/give_chemist_outfit [color] [amount]` | Attribue une tenue de chimiste en précisant la couleur et la quantité |
