@@ -1,3 +1,68 @@
 ---
-title: "Tebex"
+title: "Configuration Tebex"
+icon: "store"
+description: "Configurez les variables Tebex pour connecter votre boutique au serveur."
 ---
+
+## Vue d'ensemble
+
+La variable `server_username` permet de relier votre serveur à votre compte Tebex. Elle est utilisée pour identifier le serveur auprès de la boutique et assurer la communication entre les deux systèmes.
+
+![Configuration Tebex](https://addcdn.rf.gd/uploads/1778791907_tebexconfig.png)
+
+---
+
+## Paramètres de la variable
+
+| Champ | Valeur |
+|---|---|
+| **Variable** | `server_username` |
+| **Type** | `Text` |
+| **Longueur minimale** | `3` caractères |
+| **Longueur maximale** | `50` caractères |
+
+---
+
+## Validation
+
+Les caractères autorisés pour cette variable sont les suivants :
+
+<CardGroup cols={2}>
+  <Card title="Lettres" icon="a">
+    Les lettres de A à Z, majuscules et minuscules.
+  </Card>
+  <Card title="Chiffres" icon="0">
+    Les chiffres de 0 à 9.
+  </Card>
+  <Card title="Espaces" icon="pause">
+    Les espaces sont autorisés dans la valeur.
+  </Card>
+  <Card title="Caractères spéciaux" icon="star">
+    `? ! . , - ( ) $ £ € @ % & * §`
+  </Card>
+</CardGroup>
+
+---
+
+## Configuration
+
+<Steps>
+  <Step title="Accéder à la variable">
+    Depuis votre panel Tebex, naviguez jusqu'à la section **Variables** et localisez `server_username`.
+
+    ![Configuration Tebex](https://addcdn.rf.gd/uploads/1778791907_tebexconfig.png)
+  </Step>
+  <Step title="Renseigner la valeur">
+    Saisissez votre nom d'utilisateur serveur. Respectez les contraintes suivantes :
+
+    - **Minimum** : 3 caractères
+    - **Maximum** : 50 caractères
+  </Step>
+  <Step title="Valider">
+    Cliquez sur **Update** pour enregistrer la configuration.
+  </Step>
+</Steps>
+
+<Warning>
+  Une valeur trop courte (moins de 3 caractères) ou trop longue (plus de 50 caractères) sera rejetée par le système.
+</Warning>
