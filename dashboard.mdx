@@ -1,45 +1,54 @@
 ---
-title: "Dashboard"
+title: "Dashboard & Statistiques"
 icon: "airplay"
 description: "Vue centrale du panel — obtenez un aperçu immédiat de l'état du serveur et accédez aux actions essentielles."
 ---
-
 ## Vue d'ensemble
-
 <Info>
   Le Dashboard est le point d'entrée du panel. Il centralise les informations clés du serveur et donne accès aux actions de gestion les plus fréquentes depuis une seule interface.
 </Info>
-
 ![Aperçu du panel Addveo](https://addcdn.rf.gd/uploads/panneladdveo/1777582435_Capture_d___cran_2026-03-20_203519.png)
-
 ---
-
 ## Contenu principal
-
 <CardGroup cols={2}>
   <Card title="Informations serveur" icon="server">
     Nom, version et statut général du serveur consultables en un coup d'œil.
   </Card>
-
   <Card title="État en temps réel" icon="circle-dot">
     Indique si le serveur est **en ligne** ou **hors ligne** à l'instant T.
   </Card>
-
   <Card title="Journal d'activités" icon="clock-rotate-left">
     Aperçu des dernières actions effectuées sur le panel.
   </Card>
-
   <Card title="Accès rapide" icon="bolt">
     Raccourcis vers les fonctionnalités clés du panel.
   </Card>
 </CardGroup>
-
 ---
-
 ## Actions disponibles
-
 | Action | Description |
 | --- | --- |
 | **Démarrer** | Lance le serveur s'il est arrêté |
 | **Arrêter** | Coupe le serveur proprement |
 | **Redémarrer** | Applique un redémarrage complet du serveur |
+---
+## Statistiques
+La section Statistiques centralise toutes les données de performance et d'activité de votre serveur. Elle vous permet de suivre l'évolution de votre communauté et d'identifier les pics d'affluence.
+<Info>
+  Les statistiques sont mises à jour en temps réel et reflètent l'état actuel de votre serveur.
+</Info>
+![Statistiques](https://addcdn.rf.gd/uploads/1780247744_tebeximage.png)
+<CardGroup cols={2}>
+  <Card title="Joueurs actuellement" icon="users">
+    Nombre de joueurs connectés en ce moment sur le serveur.
+  </Card>
+  <Card title="Pic — 7 derniers jours" icon="arrow-trend-up">
+    Record de joueurs simultanés enregistré sur les 7 derniers jours.
+  </Card>
+  <Card title="Pic — 30 derniers jours" icon="calendar">
+    Record de joueurs simultanés enregistré sur les 30 derniers jours.
+  </Card>
+  <Card title="Historique des joueurs" icon="chart-line">
+    Courbe d'activité consultable sur différentes périodes : 1h, 6h, 24h, 7j et 30j.
+  </Card>
+</CardGroup>
