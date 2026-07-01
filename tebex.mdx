@@ -1,70 +1,98 @@
----
-title: "Configuration Tebex"
-icon: "store"
-description: "Configurez les variables Tebex pour connecter votre boutique au serveur."
----
-## Vue d'ensemble
-La variable `server_username` permet de relier votre serveur à votre compte Tebex. Elle est utilisée pour identifier le serveur auprès de la boutique et assurer la communication entre les deux systèmes.
+# Configuration Tebex
+
+> Comment relier votre boutique Tebex à votre serveur, étape par étape.
+
+## C'est quoi cette page ?
+
+Pour que votre boutique en ligne (Tebex) puisse fonctionner avec votre serveur, il faut renseigner **un seul champ** : `server_username`. Ce champ sert à dire à Tebex "voici mon serveur, connecte-toi à lui".
+
+Pas besoin de taper de commande ni de toucher au code : tout se fait dans le panel Tebex, avec la souris.
+
 ![Configuration Tebex](https://addcdn.rf.gd/uploads/1778791907_tebexconfig.png)
+
 ---
-## Paramètres de la variable
-| Champ | Valeur |
-|---|---|
-| **Variable** | `server_username` |
-| **Type** | `Text` |
-| **Longueur minimale** | `3` caractères |
-| **Longueur maximale** | `50` caractères |
+
+## Ce qu'il faut savoir avant de commencer
+
+| Ce qu'on vous demande | Réponse |
+| --- | --- |
+| Nom du champ à remplir | `server_username` |
+| Type de champ | Du texte simple |
+| Longueur minimum | 3 caractères (lettres/chiffres) |
+| Longueur maximum | 50 caractères |
+
 ---
-## Validation
-Les caractères autorisés pour cette variable sont les suivants :
+
+## Quels caractères je peux utiliser ?
+
 <CardGroup cols={2}>
   <Card title="Lettres" icon="a">
-    Les lettres de A à Z, majuscules et minuscules.
+    A à Z, en majuscules ou minuscules (ex: `Bob`, `bob`, `BOB`)
   </Card>
   <Card title="Chiffres" icon="0">
-    Les chiffres de 0 à 9.
+    0 à 9 (ex: `123`)
   </Card>
   <Card title="Espaces" icon="pause">
-    Les espaces sont autorisés dans la valeur.
+    Vous pouvez mettre des espaces (ex: `Mon Serveur`)
   </Card>
-  <Card title="Caractères spéciaux" icon="star">
+  <Card title="Symboles autorisés" icon="star">
     `? ! . , - ( ) $ £ € @ % & * §`
   </Card>
 </CardGroup>
+
+<Warning>
+  Si votre texte est trop court (moins de 3 caractères) ou trop long (plus de 50), Tebex refusera de l'enregistrer. Vérifiez bien avant de valider.
+</Warning>
+
 ---
-## Configuration
+
+## Étape par étape : remplir le champ `server_username`
+
 <Steps>
-  <Step title="Accéder à la variable">
-    Depuis votre panel Tebex, naviguez jusqu'à la section **Variables** et localisez `server_username`.
+  <Step title="1. Ouvrez votre panel Tebex">
+    Connectez-vous à votre compte Tebex, comme d'habitude.
+  </Step>
+  <Step title="2. Allez dans la section Variables">
+    Dans le menu, cherchez et cliquez sur **Variables**. C'est là que se trouve `server_username`.
     ![Configuration Tebex](https://addcdn.rf.gd/uploads/1778791907_tebexconfig.png)
   </Step>
-  <Step title="Renseigner la valeur">
-    Saisissez votre nom d'utilisateur serveur. Respectez les contraintes suivantes :
-    - **Minimum** : 3 caractères
-    - **Maximum** : 50 caractères
+  <Step title="3. Écrivez votre nom d'utilisateur serveur">
+    Cliquez dans la case vide et tapez le nom que vous voulez donner à votre serveur.
+    Rappel : entre 3 et 50 caractères, pas plus, pas moins.
   </Step>
-  <Step title="Valider">
-    Cliquez sur **Update** pour enregistrer la configuration.
+  <Step title="4. Cliquez sur Update">
+    Un bouton **Update** se trouve en bas ou à côté du champ. Cliquez dessus pour enregistrer.
+    C'est fini, la configuration générale est faite !
   </Step>
 </Steps>
-<Warning>
-  Une valeur trop courte (moins de 3 caractères) ou trop longue (plus de 50 caractères) sera rejetée par le système.
-</Warning>
+
 ---
-## Configuration au niveau du package
-La configuration se fait directement dans les variables du package, et non via une commande.
+
+## Deuxième étape : le faire aussi pour chaque package (produit en vente)
+
+Attention : la config ci-dessus ne suffit pas toute seule. Il faut **refaire la même chose pour chaque produit** que vous vendez sur votre boutique (chaque "package").
+
 ![Configuration du package Tebex](https://addcdn.rf.gd/uploads/1780247744_tebeximage.png)
+
 <Steps>
-  <Step title="Ouvrir le package">
-    Depuis votre panel Tebex, ouvrez le package concerné.
+  <Step title="1. Ouvrez le produit concerné">
+    Dans votre panel Tebex, cliquez sur le package (le produit) que vous voulez configurer.
   </Step>
-  <Step title="Accéder aux variables">
-    Rendez-vous dans la section **Variables** du package — c'est l'endroit où se trouve également le prix du package.
+  <Step title="2. Allez dans Variables">
+    Toujours dans ce produit, cliquez sur l'onglet **Variables**. C'est le même endroit où vous réglez le prix du produit.
   </Step>
-  <Step title="Renseigner la variable">
-    Indiquez simplement la valeur de la variable à cet endroit.
+  <Step title="3. Remplissez la valeur">
+    Écrivez la valeur demandée, comme à l'étape précédente. Rien d'autre à faire.
   </Step>
 </Steps>
+
 <Note>
-  Aucune commande n'est nécessaire. Il suffit de définir la variable dans la configuration du package, à côté du prix. La liaison se fait automatiquement.
+  Aucune commande à taper. Aucun code à écrire. Juste remplir la case, comme un formulaire. Tebex fait le lien automatiquement avec votre serveur.
 </Note>
+
+---
+
+## Un souci ?
+
+- **"C'est refusé"** → vérifiez que votre texte fait bien entre 3 et 50 caractères, et que vous n'utilisez pas un symbole interdit.
+- **"Je ne trouve pas la section Variables"** → elle se trouve au même endroit que le prix du produit, dans les paramètres du package.
