@@ -2,6 +2,62 @@
 
 > Comment relier votre boutique Tebex à votre serveur, étape par étape.
 
+Voici une version plus propre et professionnelle de ton guide :
+
+---
+
+# Configuration du webhook de livraison Tebex
+
+## 1. Accéder à la configuration des Webhooks
+
+Rendez-vous dans votre espace Tebex, puis allez dans la section de configuration des Webhooks.
+
+![Image] : [https://addcdn.rf.gd/uploads/1785330187_Capture_d___cran_2026-07-29_150254.png](https://addcdn.rf.gd/uploads/1785330187_Capture_d___cran_2026-07-29_150254.png)
+
+Une fois sur cette page, cliquez sur **"Setup Webhook"**.
+
+![Image] : [https://addcdn.rf.gd/uploads/1785330226_Capture_d___cran_2026-07-29_150336.png](https://addcdn.rf.gd/uploads/1785330226_Capture_d___cran_2026-07-29_150336.png)
+
+---
+
+## 2. Ajouter un endpoint
+
+Cliquez ensuite sur **"Add endpoint"** afin de créer un nouveau webhook.
+
+![Image] : [https://addcdn.rf.gd/uploads/1785330288_Capture_d___cran_2026-07-29_150424.png](https://addcdn.rf.gd/uploads/1785330288_Capture_d___cran_2026-07-29_150424.png)
+
+---
+
+## 3. Ajouter l'URL du webhook de livraison
+
+Dans le champ prévu à cet effet, renseignez l'URL suivante :
+
+```
+https://<slug>.addveo.boutique/seed/tebex/delivery
+```
+
+⚠️ Remplacez **`<slug>`** par le slug de votre serveur.
+
+Pour retrouver votre slug, rendez-vous sur votre panel Addveo.
+Il correspond à la dernière partie de l'URL affichée dans votre navigateur.
+
+Exemple :
+
+![Image] : [https://addcdn.rf.gd/uploads/1785330477_Capture_d___cran_2026-07-29_150743.png](https://addcdn.rf.gd/uploads/1785330477_Capture_d___cran_2026-07-29_150743.png)
+
+---
+
+## 4. Activer les événements du webhook
+
+Une fois l'endpoint ajouté, cochez les événements suivants afin d'activer correctement la livraison automatique :
+
+![Image] : [https://addcdn.rf.gd/uploads/1785330742_Capture_d___cran_2026-07-29_151108.png](https://addcdn.rf.gd/uploads/1785330742_Capture_d___cran_2026-07-29_151108.png)
+
+---
+
+Votre webhook Tebex est maintenant correctement configuré. Les livraisons seront automatiquement transmises à votre serveur Addveo lors des achats.
+
+
 ## C'est quoi cette page ?
 
 Pour que votre boutique en ligne (Tebex) puisse fonctionner avec votre serveur, il faut renseigner **un seul champ** : `server_username`. Ce champ sert à dire à Tebex "voici mon serveur, connecte-toi à lui".
